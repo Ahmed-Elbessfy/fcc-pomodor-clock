@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "DigitalBold";
+  src: url("../fonts/DigitalBold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+  font-family: "special elite", "Segoe UI", Tahoma, Geneva, Verdana sans-serif;
+  background: #0a1423;
+  background: url("https://wwvalue.com/ct/2017/03/vector-geometric-patterns-design-low-poly-triangle-abstract-tracery-purpose-09.jpg");
+  background: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-046.jpg");
+  color: #ddd;
+  font-size: 15px;
+}
+
+.text {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > div {
+  margin: 1rem 0;
+}
+#beep {
+  display: none;
+}
+.inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-gap: 0.75rem;
+}
+
+.session,
+.break {
+  text-align: center;
+}
+
+.timer {
+  border: 7px outset #2b3459;
+  padding: 2rem;
+  background: rgb(31, 37, 61);
+  text-align: center;
+}
+
+#session-increment,
+#session-decrement,
+#break-increment,
+#break-decrement {
+  font-size: 1.7rem;
+  border: none;
+  background: none;
+  color: #fff;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+#session-length,
+#break-length,
+#time-left {
+  font-family: "DigitalBold", arial;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  width: 10rem;
+}
